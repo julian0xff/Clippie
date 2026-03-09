@@ -6,7 +6,7 @@ struct ExportService {
     static func exportDay(entries: [ClipboardEntry], dateString: String) {
         let panel = NSSavePanel()
         panel.title = "Export Clipboard History"
-        panel.nameFieldStringValue = "Clippie-\(dateString.replacingOccurrences(of: " ", with: "-")).md"
+        panel.nameFieldStringValue = "Clippy-\(dateString.replacingOccurrences(of: " ", with: "-")).md"
         panel.allowedContentTypes = [.plainText]
 
         guard panel.runModal() == .OK, let url = panel.url else { return }

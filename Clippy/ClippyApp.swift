@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ClippieApp: App {
+struct ClippyApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     @Environment(\.openWindow) private var openWindow
 

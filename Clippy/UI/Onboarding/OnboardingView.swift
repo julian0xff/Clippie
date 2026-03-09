@@ -76,10 +76,10 @@ struct OnboardingView: View {
                 .font(.system(size: 64))
                 .foregroundColor(.accentColor)
 
-            Text("Welcome to Clippie")
+            Text("Welcome to Clippy")
                 .font(.largeTitle.bold())
 
-            Text("Your clipboard history, organized and searchable.\nClippie captures everything you copy — text, images,\nand file references — and keeps it all at your fingertips.")
+            Text("Your clipboard history, organized and searchable.\nClippy captures everything you copy — text, images,\nand file references — and keeps it all at your fingertips.")
                 .font(.body)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)

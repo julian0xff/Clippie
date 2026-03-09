@@ -1,6 +1,6 @@
-name: Clippie
+name: Clippy
 options:
-  bundleIdPrefix: com.clippie
+  bundleIdPrefix: dev.julian0xff
   deploymentTarget:
     macOS: "13.0"
   xcodeVersion: "15.0"
@@ -24,19 +24,19 @@ packages:
     from: "7.0.0"
 
 targets:
-  Clippie:
+  Clippy:
     type: application
     platform: macOS
     sources:
-      - path: Clippie
+      - path: Clippy
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.clippie.app
-        PRODUCT_NAME: Clippie
+        PRODUCT_BUNDLE_IDENTIFIER: dev.julian0xff.clippy
+        PRODUCT_NAME: Clippy
         MARKETING_VERSION: "0.1.0"
         CURRENT_PROJECT_VERSION: "1"
-        INFOPLIST_FILE: Clippie/Resources/Info.plist
-        CODE_SIGN_ENTITLEMENTS: Clippie/Resources/Clippie.entitlements
+        INFOPLIST_FILE: Clippy/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Clippy/Resources/Clippy.entitlements
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
         ENABLE_HARDENED_RUNTIME: true
@@ -47,20 +47,20 @@ targets:
       - package: GRDB
         product: GRDB
     entitlements:
-      path: Clippie/Resources/Clippie.entitlements
-  ClippieDev:
+      path: Clippy/Resources/Clippy.entitlements
+  ClippyDev:
     type: application
     platform: macOS
     sources:
-      - path: Clippie
+      - path: Clippy
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.clippie.app.dev
-        PRODUCT_NAME: "Clippie Dev"
+        PRODUCT_BUNDLE_IDENTIFIER: dev.julian0xff.clippy.dev
+        PRODUCT_NAME: "Clippy Dev"
         MARKETING_VERSION: "0.1.0"
         CURRENT_PROJECT_VERSION: "1"
-        INFOPLIST_FILE: Clippie/Resources/Info.plist
-        CODE_SIGN_ENTITLEMENTS: Clippie/Resources/Clippie.entitlements
+        INFOPLIST_FILE: Clippy/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Clippy/Resources/Clippy.entitlements
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/../Frameworks"
         ENABLE_HARDENED_RUNTIME: true
@@ -71,4 +71,4 @@ targets:
       - package: GRDB
         product: GRDB
     entitlements:
-      path: Clippie/Resources/Clippie.entitlements
+      path: Clippy/Resources/Clippy.entitlements

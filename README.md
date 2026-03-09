@@ -1,4 +1,4 @@
-# Clippie
+# Clippy
 
 Clipboard history manager for macOS. Automatically captures everything you copy — text, images, and files — and lets you search, browse, and re-paste from your history.
 
@@ -25,21 +25,21 @@ Clipboard history manager for macOS. Automatically captures everything you copy 
 ## Installation
 
 ```bash
-git clone https://github.com/julian0xff/Clippie.git
-cd Clippie
+git clone https://github.com/julian0xff/Clippy.git
+cd Clippy
 xcodegen generate
-xcodebuild -project Clippie.xcodeproj -scheme Clippie -destination 'platform=macOS,arch=arm64' build
+xcodebuild -project Clippy.xcodeproj -scheme Clippy -destination 'platform=macOS,arch=arm64' build
 ```
 
-The built app will be in `~/Library/Developer/Xcode/DerivedData/Clippie-*/Build/Products/Debug/Clippie.app`. Copy it to `/Applications` to install.
+The built app will be in `~/Library/Developer/Xcode/DerivedData/Clippy-*/Build/Products/Debug/Clippy.app`. Copy it to `/Applications` to install.
 
 ## Data Storage
 
 | Data | Location |
 |------|----------|
 | Preferences | macOS UserDefaults |
-| Clipboard history | `~/Library/Application Support/Clippie/clipboard.sqlite` |
-| Saved images | `~/Library/Application Support/Clippie/Images/` |
+| Clipboard history | `~/Library/Application Support/Clippy/clipboard.sqlite` |
+| Saved images | `~/Library/Application Support/Clippy/Images/` |
 
 ## License
 

@@ -6,7 +6,7 @@ struct AboutSettingsView: View {
 
     var body: some View {
         Form {
-            Section("About Clippie") {
+            Section("About Clippy") {
                 LabeledContent("Version") {
                     Text(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Unknown")
                 }
@@ -16,7 +16,7 @@ struct AboutSettingsView: View {
             }
 
             Section {
-                Text("Clippie is a lightweight clipboard manager for macOS. It captures text, images, and file references, organizing them by day for easy access.")
+                Text("Clippy is a lightweight clipboard manager for macOS. It captures text, images, and file references, organizing them by day for easy access.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }

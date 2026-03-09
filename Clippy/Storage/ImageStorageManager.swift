@@ -11,7 +11,7 @@ final class ImageStorageManager {
 
     private let imagesDirectory: URL = {
         let appSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-        let dir = appSupport.appendingPathComponent("Clippie/images", isDirectory: true)
+        let dir = appSupport.appendingPathComponent("Clippy/images", isDirectory: true)
         try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         return dir
     }()

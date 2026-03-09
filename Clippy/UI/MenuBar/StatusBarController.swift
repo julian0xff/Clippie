@@ -25,7 +25,7 @@ final class StatusBarController: NSObject {
         popover.contentViewController = NSHostingController(rootView: contentView)
 
         if let button = statusItem.button {
-            let icon = NSImage(systemSymbolName: "paperclip", accessibilityDescription: "Clippie")
+            let icon = NSImage(systemSymbolName: "paperclip", accessibilityDescription: "Clippy")
             icon?.isTemplate = true
             button.image = icon
             button.action = #selector(togglePopover)
@@ -82,7 +82,7 @@ struct StatusBarPopoverView: View {
         VStack(spacing: 10) {
             // Header
             HStack {
-                Text("Clippie")
+                Text("Clippy")
                     .font(.headline)
                 Spacer()
                 HStack(spacing: 4) {

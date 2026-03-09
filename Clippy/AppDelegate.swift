@@ -112,7 +112,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
         if !purged.isEmpty {
-            print("Clippie: Purged \(purged.count) old entries")
+            print("Clippy: Purged \(purged.count) old entries")
         }
     }
 
@@ -129,7 +129,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         let onboardingView = OnboardingView(settingsStore: settingsStore)
         let hostingController = NSHostingController(rootView: onboardingView)
         let window = NSWindow(contentViewController: hostingController)
-        window.title = "Welcome to Clippie"
+        window.title = "Welcome to Clippy"
         window.styleMask = [.titled, .closable]
         window.setContentSize(NSSize(width: 460, height: 520))
         window.center()

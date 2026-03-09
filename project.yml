@@ -29,6 +29,11 @@ targets:
     platform: macOS
     sources:
       - path: Clippy
+        excludes:
+          - Resources/clipcopy
+      - path: Clippy/Resources/clipcopy
+        type: file
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.julian0xff.clippy
@@ -53,6 +58,11 @@ targets:
     platform: macOS
     sources:
       - path: Clippy
+        excludes:
+          - Resources/clipcopy
+      - path: Clippy/Resources/clipcopy
+        type: file
+        buildPhase: resources
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: dev.julian0xff.clippy.dev

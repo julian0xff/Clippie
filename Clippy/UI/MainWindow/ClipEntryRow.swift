@@ -170,20 +170,21 @@ struct ClipEntryRow: View {
     private func copyToClipboard(_ entry: ClipboardEntry) {
         clipboardMonitor.skipNext()
 
-        let pasteboard = NSPasteboard.general
-        pasteboard.clearContents()
-
         switch entry.contentType {
         case .text:
             if let text = entry.textContent {
-                pasteboard.setString(text, forType: .string)
+                ClipcopyBridge.copyText(text)
             }
         case .image:
+            let pasteboard = NSPasteboard.general
+            pasteboard.clearContents()
             if let fileName = entry.imageFileName,
                let image = ImageStorageManager.shared.loadImage(fileName: fileName) {
                 pasteboard.writeObjects([image])
             }
         case .file:
+            let pasteboard = NSPasteboard.general
+            pasteboard.clearContents()
             if let path = entry.filePath {
                 let url = URL(fileURLWithPath: path)
                 pasteboard.writeObjects([url as NSURL])

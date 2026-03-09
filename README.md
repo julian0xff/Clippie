@@ -2,6 +2,8 @@
 
 Clipboard history manager for macOS. Automatically captures everything you copy — text, images, and files — and lets you search, browse, and re-paste from your history.
 
+Built on top of [clipcopy](https://github.com/julian0xff/clipcopy) — the tiny cross-platform clipboard CLI that powers Clippy's text clipboard operations. You can install the CLI from **Settings > About > CLI Tools** to use it in your own scripts and workflows.
+
 ## Features
 
 - **Captures text, images, and files** — monitors the system clipboard and saves everything automatically
